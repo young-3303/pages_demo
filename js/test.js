@@ -8,9 +8,14 @@
     }
     let canvas = document.getElementById('pinkboard')
     canvas.style.opacity = '1'
-    function doPlay() {
+    function doPlay(){
         let player = document.getElementById('players')
         player.play()
     }
+    // setTimeout(() => {
+    //     player.pause()
+    //     player.play()
+    // }, 0)
     document.addEventListener('click', doPlay)
+    document.addEventListener('mouseenter', doPlay)
 })()
